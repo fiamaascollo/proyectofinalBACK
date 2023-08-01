@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const MONGOLOCAL = process.env.MONGOLOCAL;
+const MONGOATLAS = process.env.MONGOATLAS;
 
 //Conexión a la database de Mongo 
-mongoose.connect(MONGOLOCAL, {
+mongoose.connect(MONGOATLAS, {
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
 })
