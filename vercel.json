@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/vehiculos",
-            "dest": "/contacto"
+            "dest": "/concesionarios"
         },
         {
             "src": "/login",
