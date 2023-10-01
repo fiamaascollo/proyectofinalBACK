@@ -10,6 +10,14 @@
         {
             "src": "/(.*)",
             "dest": "/"
+        },
+        {
+            "src": "/vehiculos",
+            "dest": "/contacto"
+        },
+        {
+            "src": "/login",
+            "dest": "/clientes"
         }
     ]
 }
