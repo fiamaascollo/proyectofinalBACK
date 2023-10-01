@@ -8,8 +8,12 @@
     ],
     "routes": [
         {
+            "src": "/(.*)",
+            "dest": "/"
+        },        
+        {
             "src": "/vehiculos",
-            "dest": "/concesionarios"
+            "dest": "/contacto"
         },
         {
             "src": "/login",
