@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
     origin: 'https://proyectofinal-front.vercel.app', 
-    methods: ['GET', 'POST'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
   
 app.use(cors(corsOptions));
