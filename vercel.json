@@ -18,6 +18,10 @@
         {
             "src": "/clientes",
             "dest": "/update"
+        },
+        {
+            "src": "/vehiculos",
+            "dest": "/contactoS"
         }
     ]
 }
