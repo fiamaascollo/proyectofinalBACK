@@ -12,12 +12,12 @@
             "dest": "/"
         },
         {
-            "src": "/vehiculos",
-            "dest": "/contacto"
-        },
-        {
             "src": "/login",
             "dest": "/clientes"
+        },
+        {
+            "src": "/clientes",
+            "dest": "/update"
         },
         {
             "src": "/update",
