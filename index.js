@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 const corsOptions = {
     origin: 'https://proyectofinal-front.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 };
   
 app.use(cors(corsOptions));
