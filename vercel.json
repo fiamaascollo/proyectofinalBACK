@@ -18,6 +18,10 @@
         {
             "src": "/login",
             "dest": "/clientes"
+        },
+        {
+            "src": "/update",
+            "dest": "/clientes"
         }
     ]
 }
