@@ -10,13 +10,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const corsOptions = {
+/* const corsOptions = {
     origin: 'https://proyectofinal-front.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
   
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); */
 
 app.get('/', (req, res) => {
     res.send(`<h1>Soy el Back de la aplicación de Fiama y Francisco</h1>`)
@@ -114,12 +114,13 @@ app.put('/clientes/:id', async (req, res) => {
 
     try {
         const updateUser = await Usuario.findByIdAndUpdate(id, data, {new: true});
-        console.log(updateUser);
+        console.log('Resultado de findByIdAndUpdate:', updateUser);
         if (updateUser) {
-          console.log('Cliente Actualizado', updateUser);
-          return res.status(200).json(updateUser);
+            console.log('Cliente Actualizado', updateUser);
+            return res.status(200).json(updateUser);
         } else {
-          return res.status(404).json({error: 'Cliente no encontrado'});
+            console.log('Cliente no encontrado');
+            return res.status(404).send();
         }
       } catch (error) {
         console.log(error);
