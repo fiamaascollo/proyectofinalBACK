@@ -10,13 +10,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-/* const corsOptions = {
+const corsOptions = {
     origin: 'https://proyectofinal-front.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
   
-app.use(cors(corsOptions)); */
+app.use(cors(corsOptions)); 
 
 app.get('/', (req, res) => {
     res.send(`<h1>Soy el Back de la aplicación de Fiama y Francisco</h1>`)
